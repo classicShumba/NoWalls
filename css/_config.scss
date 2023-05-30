@@ -1,0 +1,118 @@
+/**************** 
+*****Resets******
+*****************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/********************
+*Colors & Typography*
+*********************/
+
+:root{
+    --primary-white: #ffffff;
+    --primary-green: #0A3140;
+    --primary-navy: #061F27;
+    --accent-grey: #ECEDEF;
+    --accent-off: #F5F6F8;
+    --accent-brown: #CD7E50;
+    --secondary-blue: #0B394D;
+    --secondary-green: #123E52;
+}
+
+body{
+    font-family: baloo;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 3.75rem;
+
+    @media screen and (min-width: 48rem) {
+        font-size: 5.63rem;
+    }
+}
+h2{
+    font-size: 2.2rem;
+
+    @media screen and (min-width: 48rem) {
+        font-size: 2.8rem;
+    }
+}
+.menu-item{
+    a{
+        font-size: 2rem;
+        color: var(--primary-navy);
+
+        @media screen and (min-width: 48rem) {
+            font-size: 2.2rem;
+        }
+    }
+}
+p{
+    font-size: 1.2rem;
+    font-family: baloo2;
+    font-weight: 500;
+}
+.brown{
+    color: var(--accent-brown);
+}
+.green{
+    color: var(--primary-green);
+}
+.wrapper{
+    padding: 0 1rem;
+    max-width: 85.375rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 62rem) {
+        padding: 0 4rem;
+    }
+}
+section{
+    margin-bottom: 7rem;
+}
+
+.btn {
+    background: var(--secondary-blue);
+    color: var(--primary-white);
+    font-size: 1.6rem;
+    padding: .8rem 3.6rem;
+    height: 4.3rem;
+    max-width: 24.375rem;
+    font-family: baloo2;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    scale: .9;
+
+    &:hover{
+        background: var(--primary-white);
+        color: var(--secondary-green);
+        border: var(--secondary-green) 0.125rem solid;
+        scale: 1;
+    }
+    &:active{
+        scale: .9;
+    }
+}
+.nav-wrapper{
+    padding: 0 1rem;
+}
+
